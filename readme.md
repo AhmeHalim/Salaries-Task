@@ -28,8 +28,8 @@ Screenshot
 
 Extras
 -----------
-* reposatory come with .sql database file
-* reposatory come with .json Api collection file
+* repository come with .sql database file
+* repository come with .json Api collection file
 
 About me
 -----------
