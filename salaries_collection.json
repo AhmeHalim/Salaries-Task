@@ -1,0 +1,449 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Task",
+		"_postman_id": "a665806c-b560-fd4e-e9ff-63c8d8b6667d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"description": "",
+			"item": [
+				{
+					"name": "{{url}}/login",
+					"request": {
+						"url": "{{url}}/login",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ahmedhalim467@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{url}}/register",
+					"request": {
+						"url": "{{url}}/register",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "alfred",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "alfread@email.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "12345678",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "ba76c3e0-2afd-47b9-9230-4bfade39750b",
+							"name": "{{url}}/register",
+							"originalRequest": {
+								"url": "{{url}}/register",
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "alfred",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "alfread@email.com",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "12345678",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "cache-control",
+									"key": "cache-control",
+									"value": "no-cache, private",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "Keep-Alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "466",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Wed, 26 Feb 2020 10:30:24 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=5, max=100",
+									"description": "Custom header"
+								},
+								{
+									"name": "server",
+									"key": "server",
+									"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.1",
+									"description": "A name for the server"
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "PHP/7.3.1",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								},
+								{
+									"name": "x-ratelimit-limit",
+									"key": "x-ratelimit-limit",
+									"value": "60",
+									"description": "Custom header"
+								},
+								{
+									"name": "x-ratelimit-remaining",
+									"key": "x-ratelimit-remaining",
+									"value": "59",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 549,
+							"body": "{\"user\":{\"name\":\"alfred\",\"email\":\"alfread@email.com\",\"updated_at\":\"2020-02-26 10:30:24\",\"created_at\":\"2020-02-26 10:30:24\",\"id\":4},\"token\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL1Rhc2tcL2FwaVwvcmVnaXN0ZXIiLCJpYXQiOjE1ODI3MTMwMjQsImV4cCI6MTU4Mjc5OTQyNCwibmJmIjoxNTgyNzEzMDI0LCJqdGkiOiJ5T0sxR1BIU2V3VXlPUFZLIiwic3ViIjo0LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.8BOcid1ydLVsTZQHtPSK46f-wxBtBrQsBmH4Y4qGYV8\"}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Salaries",
+			"description": "",
+			"item": [
+				{
+					"name": "{{url}}/monthSlaries",
+					"request": {
+						"url": "{{url}}/monthSlaries",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL1Rhc2tcL2FwaVwvbG9naW4iLCJpYXQiOjE1ODI3MTE5NTEsImV4cCI6MTU4Mjc5ODM1MSwibmJmIjoxNTgyNzExOTUxLCJqdGkiOiJIRURobTlhZzRtdlF3V2pYIiwic3ViIjozLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.8LF9y5LqhymqnYothS4TXlVXa74KhZ9JQm43Sa-r2BY",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "return this month salary"
+					},
+					"response": [
+						{
+							"id": "986aca76-baac-433f-909a-f3b3318ff819",
+							"name": "{{url}}/monthSlaries",
+							"originalRequest": {
+								"url": "{{url}}/monthSlaries",
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL1Rhc2tcL2FwaVwvbG9naW4iLCJpYXQiOjE1ODI3MTE5NTEsImV4cCI6MTU4Mjc5ODM1MSwibmJmIjoxNTgyNzExOTUxLCJqdGkiOiJIRURobTlhZzRtdlF3V2pYIiwic3ViIjozLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.8LF9y5LqhymqnYothS4TXlVXa74KhZ9JQm43Sa-r2BY",
+										"description": "",
+										"warning": ""
+									}
+								],
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "cache-control",
+									"key": "cache-control",
+									"value": "no-cache, private",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "Keep-Alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "214",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Wed, 26 Feb 2020 10:24:56 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=5, max=100",
+									"description": "Custom header"
+								},
+								{
+									"name": "server",
+									"key": "server",
+									"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.1",
+									"description": "A name for the server"
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Authorization",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "PHP/7.3.1",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								},
+								{
+									"name": "x-ratelimit-limit",
+									"key": "x-ratelimit-limit",
+									"value": "60",
+									"description": "Custom header"
+								},
+								{
+									"name": "x-ratelimit-remaining",
+									"key": "x-ratelimit-remaining",
+									"value": "59",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 1826,
+							"body": "{\"salaries\":{\"Month\":\"Feb\",\"Year\":\"2020\",\"Salaries_payment_day\":\"27\",\"Bonus_payment_day\":\"15\",\"Salaries_total\":\"13000\",\"Bonus_total\":\"800\",\"Payments_total\":13800},\"message\":\"this is Feb 2020 Salaries\",\"status\":200}"
+						}
+					]
+				},
+				{
+					"name": "{{url}}/customMonthSalaries",
+					"request": {
+						"url": "{{url}}/customMonthSalaries",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL1Rhc2tcL2FwaVwvbG9naW4iLCJpYXQiOjE1ODI3MTE5NTEsImV4cCI6MTU4Mjc5ODM1MSwibmJmIjoxNTgyNzExOTUxLCJqdGkiOiJIRURobTlhZzRtdlF3V2pYIiwic3ViIjozLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.8LF9y5LqhymqnYothS4TXlVXa74KhZ9JQm43Sa-r2BY",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "month",
+									"value": "Jan",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "year",
+									"value": "2020",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "return custom salary in any year and month"
+					},
+					"response": [
+						{
+							"id": "8f4070a5-b58e-4ceb-bfb7-666398d14d61",
+							"name": "{{url}}/customMonthSalaries",
+							"originalRequest": {
+								"url": "{{url}}/customMonthSalaries",
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL1Rhc2tcL2FwaVwvbG9naW4iLCJpYXQiOjE1ODI3MTE5NTEsImV4cCI6MTU4Mjc5ODM1MSwibmJmIjoxNTgyNzExOTUxLCJqdGkiOiJIRURobTlhZzRtdlF3V2pYIiwic3ViIjozLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.8LF9y5LqhymqnYothS4TXlVXa74KhZ9JQm43Sa-r2BY",
+										"description": "",
+										"warning": ""
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "month",
+											"value": "Jan",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "year",
+											"value": "2020",
+											"description": "",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"name": "cache-control",
+									"key": "cache-control",
+									"value": "no-cache, private",
+									"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+								},
+								{
+									"name": "connection",
+									"key": "connection",
+									"value": "Keep-Alive",
+									"description": "Options that are desired for the connection"
+								},
+								{
+									"name": "content-length",
+									"key": "content-length",
+									"value": "208",
+									"description": "The length of the response body in octets (8-bit bytes)"
+								},
+								{
+									"name": "content-type",
+									"key": "content-type",
+									"value": "application/json",
+									"description": "The mime type of this content"
+								},
+								{
+									"name": "date",
+									"key": "date",
+									"value": "Wed, 26 Feb 2020 10:28:16 GMT",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"name": "keep-alive",
+									"key": "keep-alive",
+									"value": "timeout=5, max=100",
+									"description": "Custom header"
+								},
+								{
+									"name": "server",
+									"key": "server",
+									"value": "Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.1",
+									"description": "A name for the server"
+								},
+								{
+									"name": "vary",
+									"key": "vary",
+									"value": "Authorization",
+									"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+								},
+								{
+									"name": "x-powered-by",
+									"key": "x-powered-by",
+									"value": "PHP/7.3.1",
+									"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+								},
+								{
+									"name": "x-ratelimit-limit",
+									"key": "x-ratelimit-limit",
+									"value": "60",
+									"description": "Custom header"
+								},
+								{
+									"name": "x-ratelimit-remaining",
+									"key": "x-ratelimit-remaining",
+									"value": "59",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [],
+							"responseTime": 368,
+							"body": "{\"salaries\":{\"Month\":\"Jan\",\"Year\":\"2020\",\"Salaries_payment_day\":\"30\",\"Bonus_payment_day\":\"\",\"Salaries_total\":\"8000\",\"Bonus_total\":\"0\",\"Payments_total\":8000},\"message\":\"this is Jan 2020 Salaries\",\"status\":200}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
